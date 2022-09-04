@@ -47,6 +47,7 @@ public class InternalCamera1AdvancedFeaturesExample extends LinearOpMode
      * the advanced features supported only by the internal camera.
      */
     OpenCvInternalCamera phoneCam;
+    String gitHubTest;
 
     @Override
     public void runOpMode()
@@ -57,7 +58,7 @@ public class InternalCamera1AdvancedFeaturesExample extends LinearOpMode
          * you should take a look at {@link InternalCamera1Example} or its
          * webcam counterpart, {@link WebcamExample} first.
          */
-
+        gitHubTest = "git hub test";
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         phoneCam = OpenCvCameraFactory.getInstance().createInternalCamera(OpenCvInternalCamera.CameraDirection.BACK, cameraMonitorViewId);
 
